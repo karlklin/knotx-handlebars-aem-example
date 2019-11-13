@@ -42,3 +42,9 @@ paths:
           description: At least one procedure has reported a non-healthy stat
         '500':
           description: One procedure has thrown an error or has not reported a status in time
+  /content/*:
+    get:
+      operationId: content-get
+      responses:
+        default:
+          description: Template processing
