@@ -48,3 +48,16 @@ paths:
       responses:
         default:
           description: Template processing
+  /etc/*:
+    get:
+        operationId: resources-get
+        responses:
+          default:
+            description: Resources fetch
+  /etc.clientlibs/*:
+    get:
+      operationId: resources-client-get
+      responses:
+        default:
+          description: Resources fetch
+
