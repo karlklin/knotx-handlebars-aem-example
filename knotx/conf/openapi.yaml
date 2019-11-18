@@ -42,21 +42,27 @@ paths:
           description: At least one procedure has reported a non-healthy stat
         '500':
           description: One procedure has thrown an error or has not reported a status in time
-  /content/*:
+  /content/handlebars/*:
     get:
       operationId: content-get
       responses:
         default:
           description: Template processing
+  /content/dam/*:
+    get:
+      operationId: dam-get
+      responses:
+        default:
+          description: Template processing
   /etc/*:
     get:
-        operationId: resources-get
+        operationId: resource-get
         responses:
           default:
             description: Resources fetch
   /etc.clientlibs/*:
     get:
-      operationId: resources-client-get
+      operationId: resource-client-get
       responses:
         default:
           description: Resources fetch
