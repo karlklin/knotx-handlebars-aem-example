@@ -11,7 +11,7 @@ import io.vertx.core.json.JsonObject;
 public class MegaMenuActionFactory implements ActionFactory {
     @Override
     public String getName() {
-        return "mega-menu-action-factory";
+        return "static-mega-menu-action-factory";
     }
 
     @Override
